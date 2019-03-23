@@ -15,5 +15,6 @@
 ## 03. Longest Substring Without Repeating Characters 03.23
 * 使用数组进行直接访存 ~~为什么会想不通用hash~~
 * 应该是需要减少重复访问string的次数，争取一次遍历过，但目前还没想好咋整
+* 但是现在还不想直接去看别人的方法
 * Runtime: 40 ms, faster than 41.22% of C++ online submissions for Longest Substring Without Repeating Characters.
 Memory Usage: 15.3 MB, less than 70.82% of C++ online submissions for Longest Substring Without Repeating Characters.
