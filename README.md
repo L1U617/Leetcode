@@ -10,3 +10,10 @@
 * "Faster than 21.08%" of c++ online submissions for Sort List. Less than 5.02% of c++ online submissions for Sort List."
 * ~~不太彳亍~~
 ### 大佬写的
+
+~~找到了用python写的大佬，感觉方法似乎是一样的~~
+## 03. Longest Substring Without Repeating Characters 03.23
+* 使用数组进行直接访存 ~~为什么会想不通用hash~~
+* 应该是需要减少重复访问string的次数，争取一次遍历过，但目前还没想好咋整
+* Runtime: 40 ms, faster than 41.22% of C++ online submissions for Longest Substring Without Repeating Characters.
+Memory Usage: 15.3 MB, less than 70.82% of C++ online submissions for Longest Substring Without Repeating Characters.
