@@ -18,3 +18,6 @@
 * 但是现在还不想直接去看别人的方法
 * Runtime: 40 ms, faster than 41.22% of C++ online submissions for Longest Substring Without Repeating Characters.
 Memory Usage: 15.3 MB, less than 70.82% of C++ online submissions for Longest Substring Without Repeating Characters.
+## 200. Number of Island
+* 深度优先遍历
+* ~~我想出来的就是大多数人想出来的，究极普通解法~~
