@@ -12,7 +12,7 @@
 ### 大佬写的
 
 ~~找到了用python写的大佬，感觉方法似乎是一样的~~
-## 03. Longest Substring Without Repeating Characters 03.23
+## 03.23 03. Longest Substring Without Repeating Characters 
 * 使用数组进行直接访存 ~~为什么会想不通用hash~~
 * 应该是需要减少重复访问string的次数，争取一次遍历过，但目前还没想好咋整
 * 但是现在还不想直接去看别人的方法
@@ -21,3 +21,8 @@ Memory Usage: 15.3 MB, less than 70.82% of C++ online submissions for Longest Su
 ## 200. Number of Island
 * 深度优先遍历
 * ~~我想出来的就是大多数人想出来的，究极普通解法~~
+## 03.26 07.Reverse Integer
+* Runtime: 4 ms, faster than 100.00% of C++ online submissions for Reverse Integer.
+Memory Usage: 8 MB, less than 100.00% of C++ online submissions for Reverse Integer.
+* 插一会儿腰.jpg
+* 用取余的办法进行转置，将ret设为double型，然后直接和int型的边界进行比较
