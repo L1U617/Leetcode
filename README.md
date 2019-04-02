@@ -26,7 +26,7 @@ Memory Usage: 15.3 MB, less than 70.82% of C++ online submissions for Longest Su
 Memory Usage: 8 MB, less than 100.00% of C++ online submissions for Reverse Integer.
 * 插一会儿腰.jpg
 * 用取余的办法进行转置，将ret设为double型，然后直接和int型的边界进行比较
-## APR.02 09.Palindrome Number
+## APR 02 09.Palindrome Number
 * 用上面转置的方法先把数字到转过来然后验证是否和原数相等
 * 负数可以直接返回false
 * Runtime: 36 ms, faster than 94.83% of C++ online submissions for Palindrome Number.
