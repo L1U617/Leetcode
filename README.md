@@ -44,3 +44,7 @@ Memory Usage: 9.8 MB, less than 99.17% of C++ online submissions for Container W
 * Runtime: 12 ms, faster than 99.88% of C++ online submissions for Integer to Roman.
 Memory Usage: 8.5 MB, less than 98.86% of C++ online submissions for Integer to Roman.
 * ~~虽然方法笨，但是效果好 b（￣▽￣）d~~
+### 14.Longest Common Prefix
+*  顺序检验各单词中第1,2,3...个字母是否相同 over
+*  Runtime: 8 ms, faster than 98.70% of C++ online submissions for Longest Common Prefix.
+Memory Usage: 8.8 MB, less than 99.63% of C++ online submissions for Longest Common Prefix.
