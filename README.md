@@ -56,3 +56,11 @@ Memory Usage: 8.8 MB, less than 99.63% of C++ online submissions for Longest Com
 |Memory  |8.4MB   |10.4MB  |
 |代码行数 |56      |39      |  
 * 差距没想象的大
+## APR 08
+### 说明，由于昨天（7号）刷的题（No.15）出现了调试和提交时的运行结果不同，无法debug，因此没有记录 ~~特此说明不是偷懒 略略略~~
+### 20.Valid Parentheses
+* 用三个变量分别对三种括号计数，看左右括号数目是否匹配；再用vector模拟栈，验证左括号和右括号顺序是否匹配
+* Runtime: 4 ms, faster than 100.00% of C++ online submissions for Valid Parentheses.
+Memory Usage: 8.3 MB, less than 100.00% of C++ online submissions for Valid Parentheses.
+* ~~又是超过100%，系统是不是出问题了，我这么强的吗~~
+* ~~可能只是大佬们不屑于做easy的题~~
