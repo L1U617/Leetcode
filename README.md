@@ -70,7 +70,9 @@ Memory Usage: 8.3 MB, less than 100.00% of C++ online submissions for Valid Pare
 * Runtime: 156 ms, faster than 19.40% of C++ online submissions for Remove Duplicates from Sorted Array.
 Memory Usage: 10 MB, less than 99.23% of C++ online submissions for Remove Duplicates from Sorted Array.
 * 估计还是删除元素的地方不太彳亍，所以时间用得很多
-* Update 一次遍历出结果: 使用cnt进行计数，同时也作为处理过后的数组的下标，遇到相同的数字就往后数，直到遇到不同的数字，然后将该数字存储到cnt标记的位置，同时跳转到该数字继续遍历；若遇到不同的数字，则直接进行处理（放入cnt标记的位置，相关的变量该加加）
+* Update
+---
+* 一次遍历出结果：使用cnt进行计数，同时也作为处理过后的数组的下标，遇到相同的数字就往后数，直到遇到不同的数字，然后将该数字存储到cnt标记的位置，同时跳转到该数字继续遍历；若遇到不同的数字，则直接进行处理（放入cnt标记的位置，相关的变量该加加）
 * Runtime: 24 ms, faster than 98.97% of C++ online submissions for Remove Duplicates from Sorted Array.
 Memory Usage: 9.8 MB, less than 99.89% of C++ online submissions for Remove Duplicates from Sorted Array.
 
