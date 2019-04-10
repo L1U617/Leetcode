@@ -71,6 +71,7 @@ Memory Usage: 8.3 MB, less than 100.00% of C++ online submissions for Valid Pare
 Memory Usage: 10 MB, less than 99.23% of C++ online submissions for Remove Duplicates from Sorted Array.
 * 估计还是删除元素的地方不太彳亍，所以时间用得很多
 * Update 一次遍历出结果
+
 |        |两次循环| 一次循环|
 |:------:|:------:|:------:|
 |Runtime |156ms   |36ms    |
