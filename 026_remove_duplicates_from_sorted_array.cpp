@@ -24,3 +24,37 @@ public:
         return cnt;
     }
 };
+
+/* 2nd version */
+/*
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int pre, length = nums.size(), i = 1, j, cnt = 1;
+        int order = 1;
+        if(nums.size() == 0) return 0;
+        pre = nums[0];
+        while(i < length){
+            if(pre == nums[i]){
+                for(j = i + 1; j < length; j++){
+                    if(nums[j] != pre){
+                        cnt++;
+                        nums[order++] = nums[j];
+                        pre = nums[j];
+                        i = j + 1;
+                        break;
+                    }
+                }
+                if(j == length) break;
+            }
+            else{
+                cnt++;
+                nums[order++] = nums[i];
+                pre = nums[i];
+                i++;
+            }
+        }        
+        return cnt;
+    }
+};
+*/
