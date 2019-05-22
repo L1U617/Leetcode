@@ -87,3 +87,7 @@ Memory Usage: 9.8 MB, less than 99.89% of C++ online submissions for Remove Dupl
 * 复习了结构体初始化的操作 & C++里怎么构建链表
 * Runtime: 8 ms, faster than 97.03% of C++ online submissions for Merge Two Sorted Lists.
 Memory Usage: 9.1 MB, less than 60.50% of C++ online submissions for Merge Two Sorted Lists.
+### 22. Remove Elements
+* 同时从首尾（i, j）相向着遍历数组，如果nums[i] == val，就看nums[j]是否等于val, 等于的话就和nums[i]替换，不等就j--，然后再次检查。先把要移除的元素移到数组尾部再遍历数组进行计数，就避免了边处理边计数引起的各种bug
+* Runtime: 4 ms, faster than 96.25% of C++ online submissions for Remove Element.
+Memory Usage: 8.6 MB, less than 78.18% of C++ online submissions for Remove Element.
