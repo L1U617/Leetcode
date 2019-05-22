@@ -81,6 +81,7 @@ Memory Usage: 9.8 MB, less than 99.89% of C++ online submissions for Remove Dupl
 |Runtime |156ms   |24ms    |
 |Memory  |10MB    |9.7MB   |
 ## MAY 22
+~~10 YEARS LATER~~
 ### 21. Merge Two Sorted Lists
 * 究极简单，没啥好说的
 * 复习了结构体初始化的操作
