@@ -84,6 +84,6 @@ Memory Usage: 9.8 MB, less than 99.89% of C++ online submissions for Remove Dupl
 ~~10 YEARS LATER~~
 ### 21. Merge Two Sorted Lists
 * 究极简单，没啥好说的
-* 复习了结构体初始化的操作
+* 复习了结构体初始化的操作 & C++里怎么构建链表
 * Runtime: 8 ms, faster than 97.03% of C++ online submissions for Merge Two Sorted Lists.
 Memory Usage: 9.1 MB, less than 60.50% of C++ online submissions for Merge Two Sorted Lists.
