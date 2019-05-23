@@ -91,3 +91,9 @@ Memory Usage: 9.1 MB, less than 60.50% of C++ online submissions for Merge Two S
 * 同时从首尾（i, j）相向着遍历数组，如果nums[i] == val，就看nums[j]是否等于val, 等于的话就和nums[i]替换，不等就j--，然后再次检查。先把要移除的元素移到数组尾部再遍历数组进行计数，就避免了边处理边计数引起的各种bug
 * Runtime: 4 ms, faster than 96.25% of C++ online submissions for Remove Element.
 Memory Usage: 8.6 MB, less than 78.18% of C++ online submissions for Remove Element.
+## MAY 23
+*** 28. Implement strStr()
+* 解决办法就是用已有方法，简单到我都不想记录下来
+* over
+
+
