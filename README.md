@@ -100,3 +100,8 @@ Memory Usage: 8.6 MB, less than 78.18% of C++ online submissions for Remove Elem
 * 主要是注意溢出怎么处理：设置两个代表最大和最小整数的字符串max、min，然后把从源字符串中提取出来的标准（不以0开头，正数前面没有'+'的）数字串，和设置好的最大、最小字符串比较，if 上溢, tmp = max; if 下溢, tmp = min;
 * Runtime: 4 ms, faster than 97.35% of C++ online submissions for String to Integer (atoi).
 Memory Usage: 8.7 MB, less than 53.82% of C++ online submissions for String to Integer (atoi).
+## MAY 29
+### 35. Search Insert Position
+* 真的很简单，所以为了显得有技术含量一点，用了二分法，嗯~ o(*￣▽￣*)o
+* Runtime: 4 ms, faster than 99.76% of C++ online submissions for Search Insert Position.
+Memory Usage: 8.8 MB, less than 87.63% of C++ online submissions for Search Insert Position.
