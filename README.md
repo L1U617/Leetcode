@@ -105,3 +105,8 @@ Memory Usage: 8.7 MB, less than 53.82% of C++ online submissions for String to I
 * 真的很简单，所以为了显得有技术含量一点，用了二分法，嗯~ o(*￣▽￣*)o
 * Runtime: 4 ms, faster than 99.76% of C++ online submissions for Search Insert Position.
 Memory Usage: 8.8 MB, less than 87.63% of C++ online submissions for Search Insert Position.
+## JUN 01
+### 22. Generate Parenthese
+* [代码来源](https://leetcode.com/problems/generate-parentheses/discuss/303011/0-ms-C%2B%2B-solution)
+* 的确是使用递归，由于括号配对始终是左→右，所以把左括号的递归语句写在前面，后面跟着一个右括号的处理过程，这样一来生成一种组合函数返回后，就可以将一个左括号替换为右括号，然后继续递归调用，同时在左括号数=右括号数，放置左括号，也保证了配对的正确性。
+* ~~这样把解释一写，发现这不就和BFS之类的一个道理吗，先左后右，果然还是对递归不太熟练~~
