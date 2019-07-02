@@ -110,6 +110,7 @@ Memory Usage: 8.8 MB, less than 87.63% of C++ online submissions for Search Inse
 * [代码来源](https://leetcode.com/problems/generate-parentheses/discuss/303011/0-ms-C%2B%2B-solution)
 * 的确是使用递归，由于括号配对始终是左→右，所以把左括号的递归语句写在前面，后面跟着一个右括号的处理过程，这样一来生成一种组合函数返回后，就可以将一个左括号替换为右括号，然后继续递归调用，同时在左括号数=右括号数，放置左括号，也保证了配对的正确性。
 * ~~这样把解释一写，发现这不就和BFS之类的一个道理吗，先左后右，果然还是对递归不太熟练~~
+## JULY 02
 ### 113. Path Sum Ⅱ
 * DFS就完事了，只是要注意题目要求的是从根到叶子节点的路径，所以得判断清除是不是叶子节点
 * Runtime: 24 ms, faster than 39.83% of C++ online submissions for Path Sum II.
