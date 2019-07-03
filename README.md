@@ -117,7 +117,7 @@ Memory Usage: 8.8 MB, less than 87.63% of C++ online submissions for Search Inse
 Memory Usage: 38.3 MB, less than 11.06% of C++ online submissions for Path Sum II.
 ## JUL 03
 ### 123. Best Time to Buy and Sell Stock III
-* 先算出相邻两天的差值存在数组里diff里，然后对该数组进行处理，看什么时候该数组分成前后两组时，两边的最大子序列和相加的值最大
+* 先算出相邻两天的差值存在数组里diff里，然后对该数组进行处理，看什么时候该数组分成前后两组时，两边的**最大子序列和**相加的值最大
 * Runtime: 1164 ms, faster than 5.06% of C++ online submissions for Best Time to Buy and Sell Stock III.
 Memory Usage: 318.9 MB, less than 5.02% of C++ online submissions for Best Time to Buy and Sell Stock III.
 * ~~勉强通过了，差一丢丢又要超时orz~~
