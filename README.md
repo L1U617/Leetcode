@@ -110,8 +110,15 @@ Memory Usage: 8.8 MB, less than 87.63% of C++ online submissions for Search Inse
 * [代码来源](https://leetcode.com/problems/generate-parentheses/discuss/303011/0-ms-C%2B%2B-solution)
 * 的确是使用递归，由于括号配对始终是左→右，所以把左括号的递归语句写在前面，后面跟着一个右括号的处理过程，这样一来生成一种组合函数返回后，就可以将一个左括号替换为右括号，然后继续递归调用，同时在左括号数=右括号数，放置左括号，也保证了配对的正确性。
 * ~~这样把解释一写，发现这不就和BFS之类的一个道理吗，先左后右，果然还是对递归不太熟练~~
-## JULY 02
+## JUL 02
 ### 113. Path Sum Ⅱ
 * DFS就完事了，只是要注意题目要求的是从根到叶子节点的路径，所以得判断清除是不是叶子节点
 * Runtime: 24 ms, faster than 39.83% of C++ online submissions for Path Sum II.
 Memory Usage: 38.3 MB, less than 11.06% of C++ online submissions for Path Sum II.
+## JUL 03
+### 123. Best Time to Buy and Sell Stock III
+* 先算出相邻两天的差值存在数组里diff里，然后对该数组进行处理，看什么时候该数组分成前后两组时，两边的最大子序列和相加的值最大
+* Runtime: 1164 ms, faster than 5.06% of C++ online submissions for Best Time to Buy and Sell Stock III.
+Memory Usage: 318.9 MB, less than 5.02% of C++ online submissions for Best Time to Buy and Sell Stock III.
+* ~~勉强通过了，差一丢丢又要超时orz~~
+* 超时版本，先算出每天买进和卖出时的最大利润，把每天卖出的利润和此后买进的最大利润相加，依次进行这样的处理，找到最大的和就为答案
