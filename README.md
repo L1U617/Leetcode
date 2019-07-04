@@ -122,3 +122,4 @@ Memory Usage: 38.3 MB, less than 11.06% of C++ online submissions for Path Sum I
 Memory Usage: 318.9 MB, less than 5.02% of C++ online submissions for Best Time to Buy and Sell Stock III.
 * ~~勉强通过了，差一丢丢又要超时orz~~
 * 超时版本，先算出每天买进和卖出时的最大利润，把每天卖出的利润和此后买进的最大利润相加，依次进行这样的处理，找到最大的和就为答案
+* "先算出每天买进和卖出时的最大利润", 用了更快速的方法得到这两个数组，并且进一步处理（把每天可卖出获得的最大利润改进为**在当天卖出的话**和**这一天以前如果卖出的话**，这两者所获利润的最大值）后可以线性解决
