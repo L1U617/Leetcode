@@ -56,5 +56,34 @@ public:
             if(maxP < tmpMax) maxP = tmpMax;
         }
         return maxP;*/
+        
+        /*改进版*/
+        /*        int maxP = 0, tmpMax;
+        int days = prices.size();
+        if(days == 0) return 0;
+        vector<int> in(days, 0);
+        vector<int> out(days, 0);
+        
+        vector<int> out_max(days), in_min(days);
+        out_max[days - 1] = prices[days - 1];
+        in_min[0] = prices[0];
+        out[0] = 0;
+        int i, j;
+        for(i = days - 2; i >= 0; i--)
+            out_max[i] = max(prices[i], out_max[i + 1]);
+        for(i = 1; i < days; i++)
+            in_min[i] = min(prices[i], in_min[i - 1]);
+        
+        for(i = 0; i < days ; i++){
+            in[i] = out_max[i] - prices[i];
+        }
+        for(i = 1; i < days;i++){
+            out[i] = max(out[i - 1], prices[i] - in_min[i]);
+        }
+        
+        for(i = 0; i < days; i++){
+            maxP = max(maxP, in[i] + out[i]);
+        }
+        return maxP;*/
     }
 };
