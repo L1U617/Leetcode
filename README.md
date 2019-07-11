@@ -128,3 +128,8 @@ Memory Usage: 318.9 MB, less than 5.02% of C++ online submissions for Best Time 
 * 简而言之，除余法~~（名字自己编的）~~Talk is cheap, just see the code
 * Runtime: 4 ms, faster than 78.57% of C++ online submissions for Permutation Sequence.
 Memory Usage: 8 MB, less than 87.97% of C++ online submissions for Permutation Sequence.
+## JUL 11
+### 504. Base 7
+* 十进制→七进制
+* Runtime: 4 ms, faster than 65.73% of C++ online submissions for Base 7.
+Memory Usage: 8.2 MB, less than 48.95% of C++ online submissions for Base 7.
