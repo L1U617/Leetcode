@@ -138,4 +138,4 @@ Memory Usage: 8.2 MB, less than 48.95% of C++ online submissions for Base 7.
 * 最长子序列和，和之前学过的差别就是最小的数不是0，如果整个数组的子序列的所有组合的和都是负数，那最大子序列和也不是0，而是最大的那个负数
 * Runtime: 8 ms, faster than 79.65% of C++ online submissions for Maximum Subarray.
 Memory Usage: 9.2 MB, less than 71.95% of C++ online submissions for Maximum Subarray.
-* 题目说还可以用分治的方法来解决，但是我~~……并不知道分治到底是个啥了~~
+* 题目说还可以用分治的方法来解决，但是我……~~并不知道分治到底是个啥了~~
