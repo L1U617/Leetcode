@@ -139,3 +139,7 @@ Memory Usage: 8.2 MB, less than 48.95% of C++ online submissions for Base 7.
 * Runtime: 8 ms, faster than 79.65% of C++ online submissions for Maximum Subarray.
 Memory Usage: 9.2 MB, less than 71.95% of C++ online submissions for Maximum Subarray.
 * 题目说还可以用分治的方法来解决，但是我……~~并不知道分治到底是个啥了~~
+## AUG 02
+### 206. Reverse Linked List
+* Runtime: 8 ms, faster than 80.21% of C++ online submissions for Reverse Linked List.
+Memory Usage: 9 MB, less than 97.58% of C++ online submissions for Reverse Linked List.
