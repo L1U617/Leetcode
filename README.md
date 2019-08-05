@@ -143,3 +143,9 @@ Memory Usage: 9.2 MB, less than 71.95% of C++ online submissions for Maximum Sub
 ### 206. Reverse Linked List
 * Runtime: 8 ms, faster than 80.21% of C++ online submissions for Reverse Linked List.
 Memory Usage: 9 MB, less than 97.58% of C++ online submissions for Reverse Linked List.
+## AUG 05
+### 637. Average of Levels in Binary Tree
+* 使用层次遍历，边遍历边统计下一层的结点数（level），并且遍历的时候也要统计遍历了几个节点（cnt），cnt = level的时候就可计算当前层的平均值，然后cnt清零，level更新
+* Runtime: 36 ms, faster than 7.23% of C++ online submissions for Average of Levels in Binary Tree.
+Memory Usage: 21.3 MB, less than 100.00% of C++ online submissions for Average of Levels in Binary Tree.
+* ~~时间换空间~~ 但是按道理就是O(n),为什么时间会用这么多呢
