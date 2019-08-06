@@ -146,6 +146,17 @@ Memory Usage: 9 MB, less than 97.58% of C++ online submissions for Reverse Linke
 ## AUG 05
 ### 637. Average of Levels in Binary Tree
 * 使用层次遍历，边遍历边统计下一层的结点数（level），并且遍历的时候也要统计遍历了几个节点（cnt），cnt = level的时候就可计算当前层的平均值，然后cnt清零，level更新
-* Runtime: 36 ms, faster than 7.23% of C++ online submissions for Average of Levels in Binary Tree.
+* Runtime: 36 ms, faster than **7.23%** of C++ online submissions for Average of Levels in Binary Tree.
 Memory Usage: 21.3 MB, less than 100.00% of C++ online submissions for Average of Levels in Binary Tree.
 * ~~时间换空间~~ 但是按道理就是O(n),为什么时间会用这么多呢
+* *优化：* 不用erase，用下标来标记出队元素
+Runtime: 16 ms, faster than **91.76%** of C++ online submissions for Average of Levels in Binary Tree.
+Memory Usage: 21.9 MB, less than 50.00% of C++ online submissions for Average of Levels in Binary Tree.
+~~多用了个变量，就从100%掉到50%了hhhhh~~
+## AUG 06
+### 227. Basic Calculator II
+* 用转化后缀表达式的思路
+* 但是在string类型里面不能直接识别出含多位数字的数，所以这里要注意读出正确的数字
+* Runtime: 12 ms, faster than 89.45% of C++ online submissions for Basic Calculator II.
+Memory Usage: 11.5 MB, less than 30.93% of C++ online submissions for Basic Calculator II.
+ ~~每次跑的时间都不一样，最快的是8ms~~ 
