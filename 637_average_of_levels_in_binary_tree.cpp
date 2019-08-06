@@ -21,9 +21,15 @@ public:
         double sum = 0.0;
         TreeNode* temp;
         Q.push_back(root);
+        /*update 
         while(Q.size() != 0){
             temp = Q[0];
-            Q.erase(Q.begin());
+             Q.erase(Q.begin());
+        to 
+        */
+        int i = 0;
+        while(i < Q.size()){
+            temp = Q[i++];
             cnt++;
             sum += temp->val;
             if(temp->left != NULL){
