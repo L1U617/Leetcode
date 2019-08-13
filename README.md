@@ -160,3 +160,8 @@ Memory Usage: 21.9 MB, less than 50.00% of C++ online submissions for Average of
 * Runtime: 12 ms, faster than 89.45% of C++ online submissions for Basic Calculator II.
 Memory Usage: 11.5 MB, less than 30.93% of C++ online submissions for Basic Calculator II.
  ~~每次跑的时间都不一样，最快的是8ms~~ 
+ ## AUG 13
+ ### 55.Jump Game
+ * 用DFS会memory limit exceed，改用队列，模拟层次遍历，但是效果也不咋样
+ * Runtime: 812 ms, faster than 7.17% of C++ online submissions for Jump Game.
+Memory Usage: 10.8 MB, less than 7.89% of C++ online submissions for Jump Game.
