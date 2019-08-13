@@ -1,0 +1,59 @@
+class Solution {
+public:
+    int flag = 0;
+    vector<int> A;
+    int length;
+    //DFS
+    /*void JUMP(vector<int> nums, int position){
+        if(flag == 1) return;
+        if(A[position] == 1) return;
+        if(position >= length)
+            return;
+        else if(position == length - 1){
+            flag = 1;
+            return;
+        }
+        
+        int max = nums[position];
+        int i = 1;
+        for(i; i <= max; i++){
+            JUMP(nums, position + i);
+        }
+        A[position] = 1;         
+    }*/
+    bool canJump(vector<int>& nums) {
+        length = nums.size();
+        A.resize(length, 0);
+        //JUMP(nums, 0);
+        vector<int> Q;
+        int position = 0, temp;
+        int max;       
+        int i = 0;
+        int j;
+        
+        Q.push_back(position);
+        A[position] = 1;
+        while(i < Q.size()){         
+            temp = Q[i++];
+            if(temp == length - 1){
+                flag = 1;
+                break;
+            }
+            max = nums[temp];
+            for(j = 1; j <= max; j++){
+                if(temp + j < length){
+                    if(A[temp + j] == 0){
+                        Q.push_back(temp + j);
+                        A[temp +  j] = 1;
+                    }     
+                }
+                else break;
+            }
+            
+        }
+        
+        if(flag == 1) 
+            return true;
+        else return false;        
+    }
+};
