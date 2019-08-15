@@ -165,3 +165,8 @@ Memory Usage: 11.5 MB, less than 30.93% of C++ online submissions for Basic Calc
  * 用DFS会memory limit exceed，改用队列，模拟层次遍历，但是效果也不咋样
  * Runtime: 812 ms, faster than 7.17% of C++ online submissions for Jump Game.
 Memory Usage: 10.8 MB, less than 7.89% of C++ online submissions for Jump Game.
+## AUG 15
+### 202.Happy Number
+* 在简单的分离各位数字然后平方相加，继续循环之外，如果出现了重复的数字就直接跳出循环，判定为false
+* Runtime: 4 ms, faster than 65.94% of C++ online submissions for Happy Number.
+Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Number.
