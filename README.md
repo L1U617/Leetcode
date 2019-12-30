@@ -170,3 +170,8 @@ Memory Usage: 10.8 MB, less than 7.89% of C++ online submissions for Jump Game.
 * 在简单的分离各位数字然后平方相加，继续循环之外，如果出现了重复的数字就直接跳出循环，判定为false
 * Runtime: 4 ms, faster than 65.94% of C++ online submissions for Happy Number.
 Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Number.
+
+# 开始用Python，可能会把之前做过的题重新写一遍，~~反正也会忘了是咋做的~~   
+## DEC 30
+### 22. Generate Parentheses （做过的）
+                                                   
