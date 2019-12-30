@@ -174,4 +174,6 @@ Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Numbe
 # 开始用Python，可能会把之前做过的题重新写一遍，~~反正也会忘了是咋做的~~   
 ## DEC 30
 ### 22. Generate Parentheses （做过的）
-                                                   
+|       |Python  |C++   |
+|:-----:|:------:|:----:|
+|Runtime|16ms    |4ms   |
