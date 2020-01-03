@@ -187,5 +187,5 @@ Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Numbe
 ~~这也太慢了~~
 ## JAN 03
 ### 207 Update
-* **拓扑排序**  **广度优先** **队列**
+* **拓扑排序**    **广度优先**    **队列**
 * 1540ms -> 80ms
