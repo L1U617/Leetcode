@@ -189,3 +189,7 @@ Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Numbe
 ### 207 Update
 * **拓扑排序**    **广度优先**    **队列**
 * 1540ms -> 80ms
+## JAN 05
+### 913. Cat and Mouse
+* **极大极小  自底向上染色** 
+* [Reference]((https://leetcode.com/problems/generate-parentheses/discuss/303011/0-ms-C%2B%2B-solution))
