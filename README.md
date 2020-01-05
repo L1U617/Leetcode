@@ -192,4 +192,4 @@ Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Numbe
 ## JAN 05
 ### 913. Cat and Mouse
 * **极大极小  自底向上染色** 
-* [Reference]((https://leetcode.com/problems/generate-parentheses/discuss/303011/0-ms-C%2B%2B-solution))
+* [Reference](https://leetcode-cn.com/problems/cat-and-mouse/solution/mao-he-lao-shu-by-leetcode/)
