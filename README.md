@@ -199,7 +199,7 @@ Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Numbe
 * 直接用二维数组性能不行，得优化
 ### 416 空间优化
 * 二维数组太浪费空间，遍历也耗时
-> ```python
+```python
 for i in range(1, n):
       for j in range(subSum, 0, -1):
           if j >= nums[i]:
