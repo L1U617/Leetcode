@@ -193,3 +193,9 @@ Memory Usage: 8.5 MB, less than 61.54% of C++ online submissions for Happy Numbe
 ### 913. Cat and Mouse
 * **极大极小  自底向上染色** 
 * [Reference](https://leetcode-cn.com/problems/cat-and-mouse/solution/mao-he-lao-shu-by-leetcode/)
+## JAN 07
+### 416 Partition Equal Subset Sum
+* **Dynamic programming**
+* 直接用二维数组性能不行，得优化
+### 416 空间优化
+* 二维数组太浪费空间，遍历也耗时
