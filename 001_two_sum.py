@@ -1,24 +1,19 @@
 class Solution(object):
-    def findMaximumXOR(self, nums):
+    def twoSum(self, nums, target):
         """
         :type nums: List[int]
-        :rtype: int
+        :type target: int
+        :rtype: List[int]
         """
-        ans = 0
-        mask = 0
-
-        for i in range(31, -1, -1):
-            mask |= 1 << i
-            s = set()
-            for item in nums:
-                prefix = item & mask
-                s.add(prefix)
-
-            temp = ans | (1 << i)
-            for item in nums:
-                prefix = item & mask
-                if temp ^ prefix in s:
-                    ans = temp
-                    break
+        s = set()
+        dic = {}
+        n = len(nums)
+        for i in range(n):
+            if nums[i] in s:
+                break 
+            dic[nums[i]] = i
+            d = target - nums[i]
+            s.add(d)
         
+        ans = [i, dic[target - nums[i]]]
         return ans
