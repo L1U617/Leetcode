@@ -210,4 +210,8 @@ for i in range(1, n):
 |:-----:|:------:|:----:|
 |Runtime|1528ms  |724ms |
 |Memory |15.7MB  |11.8MB|
+## JAN 10
+### 421. Maximum XOR of Two numbers in an Array
+* 异或 a ^ b = c => a ^ c = b, b ^ c = a
+* [Reference](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/solution/li-yong-yi-huo-yun-suan-de-xing-zhi-tan-xin-suan-f/)
  
