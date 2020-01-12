@@ -217,7 +217,7 @@ for i in range(1, n):
 * [Reference](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/solution/li-yong-yi-huo-yun-suan-de-xing-zhi-tan-xin-suan-f/)
 ## JAN 11 - 12
 ### 5. Longest Parlindromic Substring
-* 用了动态规划（自己瞎想的，也不知道是不是真的动态规划），dp[i][j]是指以j为中心的长度为i的回文串。
+* 用了动态规划（自己瞎想的，也不知道是不是真的动态规划），dp[i][j]是指以j为中心的长度为i的回文串。（看了题解，这应该叫中心扩展算法叭）
 转化方程（长度为奇数时）：```dp[i][j] = s[j-indent] == s[j+indent] ? s[j - indent] + dp[i - 2][j] + s[j + indent] : ""```
 * Time：3700ms memory 11.7MB
 * 用了2 x n大小的数组，所以内存消耗会小一点，但是耗时让人很绝望
