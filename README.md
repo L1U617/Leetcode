@@ -221,3 +221,22 @@ for i in range(1, n):
 转化方程（长度为奇数时）：```dp[i][j] = s[j-indent] == s[j+indent] ? s[j - indent] + dp[i - 2][j] + s[j + indent] : ""```
 * Time：3700ms memory 11.7MB
 * 用了2 x n大小的数组，所以内存消耗会小一点，但是耗时让人很绝望
+### Manacher's Algorithm
+* 重点就是这个部分，利用P[i]包含的信息，避免重复遍历
+```python
+while T[i - P[i] - 1] == T[i + P[i] + 1]:
+                P[i] += 1
+```
+* 反面案例(愚蠢的我),完全没利用到P[i]，而且还要区分偶数和奇数回文串,T也毫无意义了，完全就是中心扩展了
+```python
+if T[i] in additionalMark:
+                    P[i] = 0
+                else:
+                    P[i] = 1
+                j = 1
+                while T[i - j] == T[i + j]:
+                    if T[i-j] not in additionalMark:
+                        P[i] += 2
+                    j += 1
+```
+
