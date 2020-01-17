@@ -242,5 +242,8 @@ if T[i] in additionalMark:
 ## JAN 17
 ### 122. Best Time to Buy and Sell Stock I
 * 和123（只能买两次）不一样，这个不限次数，所以直接贪心，明天要跌就不买，明天不跌就买了明天卖，有一点赚一点
-* Runtime: 36ms over 98%
-
+* Runtime: 36ms, faster than 98%
+### 189. Rotate Array
+* 从i = 0开始，```A[0] -> A[k % n] -> ... ->  A[2 * k % n] ```直到下标转回0，然后i = 1又继续开始，同时使用count来计数做为循环条件
+* 空间复杂度应该是O(1)，如果是使用辅助数组,先把后k个元素移进去，再复制前n-k个元素的话，空间复杂度应该是O(n)
+* Runtime：36ms, faster than 98%
