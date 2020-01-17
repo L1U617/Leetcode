@@ -239,4 +239,8 @@ if T[i] in additionalMark:
                         P[i] += 2
                     j += 1
 ```
+## JAN 17
+### 122. Best Time to Buy and Sell Stock I
+* 和123（只能买两次）不一样，这个不限次数，所以直接贪心，明天要跌就不买，明天不跌就买了明天卖，有一点赚一点
+* Runtime: 36ms over 98%
 
