@@ -264,3 +264,5 @@ if T[i] in additionalMark:
 |:------:|:------:|:------:|
 |Runtime |24ms    | 16ms   |
 
+### 283. Move Zeros
+* 和把重复数字移到数组尾部是一个原理
