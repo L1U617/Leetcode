@@ -266,3 +266,7 @@ if T[i] in additionalMark:
 
 ### 283. Move Zeros
 * 和把重复数字移到数组尾部是一个原理
+## JAN 31
+### 36. Valid Sudoku
+* 暴力遍历检测
+Runtime: >54%
