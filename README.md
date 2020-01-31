@@ -270,3 +270,24 @@ if T[i] in additionalMark:
 ### 36. Valid Sudoku
 * 暴力遍历检测
 Runtime: >54%
+### 48. Rotate Image
+* 一圈一圈的处理，从最外圈开始，每一圈从左上角开始，然后按如下算法处理（计算每个元素旋转后的位置）,接着从左上第二个开始再来一遍，这一圈处理完就继续处理往内的一圈
+```python
+tmp1 = matrix[i][j]
+row = step - (edge - j) + i
+col = edge
+tmp2 = matrix[row][col]
+matrix[row][col] = tmp1
+
+col = 2*edge - row - step
+row = edge
+tmp1 = matrix[row][col]
+matrix[row][col] = tmp2
+
+row = edge - (step - col + i) 
+col = i
+tmp2 = matrix[row][col]
+matrix[row][col] = tmp1 
+
+matrix[i][j] = tmp2            
+```
