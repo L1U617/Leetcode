@@ -296,6 +296,7 @@ matrix[i][j] = tmp2
 * 使用字典以判断字符是否曾出现过，并计算出现次数。之后再次遍历以获取下标
 ## 3. Longest Substring without repeating characters
 * 一年过去了，终于想到怎么一次遍历就出结果了
+
  '''
  d - 用于判断字符是否出现过
  length - 用于存放未遇到重复字符前的子串长度
