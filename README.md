@@ -291,3 +291,6 @@ matrix[row][col] = tmp1
 
 matrix[i][j] = tmp2            
 ```
+### FEB 01
+## 387. First Character in a String
+* 使用字典以判断字符是否曾出现过，并计算出现次数。之后再次遍历以获取下标
