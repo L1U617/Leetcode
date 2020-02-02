@@ -307,5 +307,5 @@ matrix[i][j] = tmp2
  * Runtime: Over 95%
  ### FEB 02
  ## 14. Longest Common Prefix
- * 1. prefix = strs[0]；2. prefix 和第二个字符串比较，得到一个新的prefix；3.然后和第三个字符串比较，又得到新的.....
+ * prefix = strs[0]; prefix 和第二个字符串比较，得到一个新的prefix; 然后和第三个字符串比较，又得到新的.....
  * Runtime： Over 80%
