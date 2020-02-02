@@ -309,3 +309,5 @@ matrix[i][j] = tmp2
  ## 14. Longest Common Prefix
  * prefix = strs[0]; prefix 和第二个字符串比较，得到一个新的prefix; 然后和第三个字符串比较，又得到新的.....
  * Runtime： Over 80%
+## 15. 3Sum
+* 看起来动了点脑子，但还是暴力破解
