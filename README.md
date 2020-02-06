@@ -311,3 +311,11 @@ matrix[i][j] = tmp2
  * Runtime： Over 80%
 ## 15. 3Sum
 * 看起来动了点脑子，但还是暴力破解
+### FEB 06
+## 53 Maximum Substring
+* ~~我好菜啊，我好烦啊~~
+* 这次看了题解，发现了更简洁的写法
+```python
+s = max(nums[i], nums[i] + s)
+ret = max(s, ret)
+```
