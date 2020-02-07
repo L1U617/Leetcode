@@ -101,7 +101,7 @@ Memory Usage: 8.6 MB, less than 78.18% of C++ online submissions for Remove Elem
 * 主要是注意溢出怎么处理：设置两个代表最大和最小整数的字符串max、min，然后把从源字符串中提取出来的标准（不以0开头，正数前面没有'+'的）数字串，和设置好的最大、最小字符串比较，if 上溢, tmp = max; if 下溢, tmp = min;
 * Runtime: 4 ms, faster than 97.35% of C++ online submissions for String to Integer (atoi).
 Memory Usage: 8.7 MB, less than 53.82% of C++ online submissions for String to Integer (atoi).
-* **一年后的回顾：没想到当时居然是先把该排除的情况排除了再用stoi()转换………………而且这样还能超过97%😂 **
+* **一年后的回顾：没想到当时居然是先把该排除的情况排除了再用stoi()转换………………而且这样还能超过97%😂**
 **今天看到两种解法，1.python，正则表达式 ```max(min(int(*re.findall('^[\-\+]?\d+',s.lstrip())), 2**31 - 1), -2**31) ```**
 **2. 找到第一个数字然后使用d = s[i] + s * 10来进行转换，并且边转换边判断是否溢出**
 ## MAY 29
