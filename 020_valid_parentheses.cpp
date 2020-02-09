@@ -1,76 +1,29 @@
 class Solution {
 public:
     bool isValid(string s) {
-        int i, length = s.length();
-        int bracket = 0, square = 0, brace = 0;
-        vector<int> flag;
-        vector<int>::iterator pt;
-        int tag;
-        bool valid = true;
-        for(i = 0; i < length; i++){
-            if(s[i] == '('){
-                bracket++;
-                flag.push_back(1);
-            }
-            else if(s[i] == '[') {
-                square++;
-                flag.push_back(2);
-            } 
-            else if(s[i] == '{'){
-                brace++;
-                flag.push_back(3);
-            } 
-            else if(s[i] == ')'){
-                bracket--;
-                if(flag.size() != 0){
-                    pt = flag.end() - 1;
-                    tag = *pt;
-                    if(tag != 1){
-                        valid = false;
-                        break;
-                    }
-                    else flag.pop_back();
-                }
-                if(bracket < 0){
-                    valid = false;
-                    break;
-                }
-            }
-            else if(s[i] == ']'){
-                square--;
-                if(flag.size() != 0){
-                    pt = flag.end() - 1;
-                    tag = *pt;
-                    if(tag != 2){
-                        valid = false;
-                        break;
-                    }
-                    else flag.pop_back();
-                }
-                if(square < 0){
-                    valid = false;
-                    break;
-                }
-            } 
-            else if(s[i] == '}'){
-                brace--;
-                if(flag.size() != 0){
-                    pt = flag.end() - 1;
-                    tag = *pt;
-                    if(tag != 3){
-                        valid = false;
-                        break;
-                    }
-                    else flag.pop_back();
-                }
-                if(brace < 0){
-                    valid = false;
-                    break;
-                }
-            } 
-            else continue;            
+        int len = s.length();
+        if(len == 0){
+            return true;
         }
-        if(bracket != 0 || square != 0 || brace != 0) valid = false;
-        return valid;
+        if(s[0] == '}' || s[0] == ']' || s[0] == ')'){
+            return false;
+        }
+        map<char, char> m = {{']','['}, {'}','{'}, {')','('}};
+        vector<int> stack;
+        stack.push_back(s[0]);
+        char c;
+        for(int i = 1; i < len; i++){
+            if(s[i] == '}' || s[i] == ']' || s[i] == ')'){
+                if(stack.size() == 0) return false;
+                else{
+                    c = stack[stack.size() - 1];
+                    stack.pop_back();
+                    if(c != m[s[i]]) return false;
+                }
+            }
+            else stack.push_back(s[i]);
+        }
+        if(stack.size() == 0) return true;
+        else return false;
     }
 };
