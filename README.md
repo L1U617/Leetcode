@@ -65,6 +65,7 @@ Memory Usage: 8.8 MB, less than 99.63% of C++ online submissions for Longest Com
 Memory Usage: 8.3 MB, less than 100.00% of C++ online submissions for Valid Parentheses.
 * ~~又是超过100%，系统是不是出问题了，我这么强的吗~~
 * ~~可能只是大佬们不屑于做easy的题~~
+* **2020年的update，只用栈就可以了啊，为什么要计数呢？** ~~越来越觉得leetcode的排名系统有问题~~
 ## ARP 10
 ### 26.Remove Duplicates from Sorted Array
 * 先遍历一次数组把不重复的数字的个数找出来，然后再循环清除重复的数字。为什么这么搞呢，是因为只有一次循环的话，增增减减的，就搞不太清循环的跳出条件是什么了，于是干脆分两步走。第二次循环里，cnt就相当于处理好的数组的大小，所以i < cnt
