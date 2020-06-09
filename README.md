@@ -334,12 +334,30 @@ ret = max(s, ret)
 * 和3Sum一样，先排序，双指针。不过要简单一些，因为只需要输出一个数字，不用考虑是否会出现重复的情况
 * Runtime: Over 90%
 
-### JUNE 08
+### JUNE 09
 * 用了题解里的迭代方法
 > 初始时令中序遍历的指针指向第一个元素，遍历前序遍历的数组，如果前序遍历的元素不等于中序遍历的指针指向的元素，则前序遍历的元素为上一个节点的左子节点。如果前序遍历的元素等于中序遍历的指针指向的元素，则正向遍历中序遍历的元素同时反向遍历前序遍历的元素，找到最后一次相等的元素，将前序遍历的下一个节点作为最后一次相等的元素的右子节点。其中，反向遍历前序遍历的元素可通过栈的弹出元素实现。
 >>作者：LeetCode-Solution
 链接：https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/solution/mian-shi-ti-07-zhong-jian-er-cha-shu-by-leetcode-s/
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+### JUNE 10
+## 154. Find the Minimum in Rotated Sorted Array II
+* 考点应该是二分法，~~虽然用直接排序和直接遍历的性能和二分法也差不多~~
+* 二分法里，一开始的想法用mid和left、right分别比较，然后改left和right
+```python
+if nums[mid] < nums[left]:
+    right = mid
+elif nums[mid] > nums[right]:
+    left = mid + 1
+#这样无法检测 nums[left] < nums[mid] < nums[right]的情况
+
+if nums[mid] < nums[right]:
+    right = mid
+elif nums[mid] > nums[right]:
+    left = mid + 1
+#用同一个数作为标准才行
+```
 
 
