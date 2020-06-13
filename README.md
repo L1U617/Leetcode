@@ -361,12 +361,17 @@ elif nums[mid] > nums[right]:
 ```
 
 ### JUNE 11
-### 10. Regular expression matching
+## 10. Regular expression matching
 * [参考](https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/solution/zhu-xing-xiang-xi-jiang-jie-you-qian-ru-shen-by-je/)
 * 遇到的问题：1. 一开始没处理好dp[0][j]（字符串为空，正则表达式不为空）的情况，实际上这一情况直接归为检测到'\*'的情况； 2. 在检测到有'c\*'的时候，又要考虑两种情况，一种是c重复，一种是不出现c，但是这两种情况是要同时考虑的，只要有一种情况能成立就行，一开始就是这里搞错了，写成了if...else...，但是应该是if...if...
 
-### 65. Valid Number
+## 65. Valid Number
 * [有限状态自动机，强无敌](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/) 👍
+
+### JUNE 13
+## 946. Validate Stack Sequences
+* 根据入栈顺序依次将元素入栈，此过程中，当栈顶元素和出栈列表的首个元素相同时，进行出栈操作，并继续比较栈顶元素和出栈列表的第二个元素，直至栈空或二者不等，然后继续入栈。当所有元素都入栈以后，若栈为空，则返回True，否则，返回False
+* 简单来说，就是直接模拟入栈出栈操作
 
 
 
